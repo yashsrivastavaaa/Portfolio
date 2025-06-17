@@ -33,7 +33,7 @@ const About = () => {
               About Me
             </h3>
             <p className="text-lg text-gray-300 leading-relaxed text-justify">
-              Currently pursuing B.Tech in Computer Science and Engineering (Artificial Intellligence). I specialize in modern web technologies like React.js ,TypeScript and JavaScript, React Native, with strong foundations in programming and problem-solving.
+              Currently pursuing B.Tech in Computer Science and Engineering (Artificial Intelligence). I specialize in modern technologies like React.js ,TypeScript and JavaScript, React Native and Java, with strong foundations in programming and problem-solving.
             </p>
             <p className="text-lg text-gray-300 leading-relaxed text-justify">
               My academic journey has equipped me with both technical knowledge
