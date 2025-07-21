@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { TypeAnimation } from "react-type-animation";
-import profile from "../../assets/YASH_AVATAR.png";
+import profile from "../../assets/me.png";
 
 const About = () => {
   return (
