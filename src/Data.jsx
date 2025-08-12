@@ -46,6 +46,7 @@ export const technicalSkills = [
   "JavaScript (ES6+)",
   "TypeScript",
   "React.js",
+  "Next.js",
   "React Native",
   "Tailwind CSS",
 ];
@@ -63,16 +64,47 @@ export const softSkills = [
 export const projects = [
   {
     id: 1,
+  title: "MockMate",
+  icon: " ", 
+  description:
+    "MockMate is a full-stack AI-powered mock interview platform that helps users practice personalized, voice-based interviews with instant feedback. It simulates real job interview scenarios using AI voice interaction and provides actionable insights to help users improve their responses. Built with a modular and scalable architecture, MockMate combines cutting-edge AI with a sleek user experience to support career growth.",
+  features: [
+    "🔐 Secure sign-up and sign-in using Firebase Authentication",
+    "🧠 AI-powered interview questions generated dynamically via Google Gemini",
+    "🗣️ Realistic voice interactions powered by 11labs",
+    "📋 Instant AI-driven feedback on interview responses",
+    "📄 Create custom interviews tailored to specific roles or fields",
+    "📊 Interactive dashboard to track interview history and performance",
+    "💾 PostgreSQL database to store user data, interviews, and feedback",
+    "🖥️ Clean, responsive UI built with Next.js and Tailwind CSS",
+    "📱 Mobile-friendly design optimized for all devices",
+    "⚙️ Modular architecture supporting scalability and reusability"
+  ],
+  techStack: [
+    "Next.js",
+    "TypeScript",
+    "Firebase Authentication",
+    "Google Gemini (AI generation)",
+    "11labs API (Voice interaction)",
+    "PostgreSQL",
+    "Tailwind CSS",
+    "Vercel (Hosting)"
+  ],
+  demoLink: "https://mock-mate-one-theta.vercel.app/",
+  codeLink: "https://github.com/yashsrivastavaaa/MockMate" 
+  },
+  {
+    id: 2,
     title: "CampusVibes",
     icon: " ",
     description:
       "CampusVibes is a React Native-based mobile application designed to keep students connected, informed, and engaged with their college community. It is a cross-platform mobile application built with React Native, designed to centralize campus engagement by helping students, visitors, and administrators stay connected through real-time event updates, club activities, announcements, and media sharing—powered by Drizzle ORM, Neon PostgreSQL, and Cloudinary.",
     features: [
-      "Manage posts, events, and clubs through an intuitive interface",
+      "Manage posts, events, and clubs through an intuitive interface.",
       "View club members and registered users",
       "Register/unregister for events seamlessly",
       "Get club-specific posts and personalized updates",
-      "Explore and join clubs that match their interests",
+      "Explore and join clubs that match their interests.",
       "Access public posts and view upcoming events",
       "Can perform one-click registration for public events.",
     ],
@@ -85,20 +117,5 @@ export const projects = [
     ],
     demoLink: "https://github.com/yashsrivastavaaa/CampusVibes",
     codeLink: "https://github.com/yashsrivastavaaa/CampusVibes",
-  },
-  {
-    id: 2,
-    title: "CheckYourHealth",
-    icon: " ",
-    description: "CheckYourHealth is a disease prediction tool designed to provide early health insights, guiding users toward proactive care. By entering basic information and symptoms, users receive predictions for potential health issues powered by machine learning.This tool can predict several critical conditions, including: Diabetes, Lungs Cancer, Heart Disease, Breast Cancer, With a simple, user-friendly interface, CheckYourHealth turns complex health data into actionable predictions, helping users understand their health risks and empowering them to take preventive measures.",
-    features: [
-      " The tool processes user data such as symptoms, medical history, lifestyle factors, and biometric data (e.g., age, weight, blood pressure) to provide a binary prediction (i.e., ”Yes” or ”No”) for each of the three diseases expect breast cancer.",
-      "For breast cancer, the tool provides a type of breast cancer prediction based on user input.",
-      "The tool is designed to be user-friendly, allowing users to input their data easily and receive predictions quickly.",
-
-    ],
-    techStack: ["Python", "CustomTkinter", "Machine Learning Algorithms"],
-    demoLink: "https://github.com/yashsrivastavaaa/CheckYourHealth",
-    codeLink: "https://github.com/yashsrivastavaaa/CheckYourHealth",
   },
 ];
