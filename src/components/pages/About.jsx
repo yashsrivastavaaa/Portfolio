@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { TypeAnimation } from "react-type-animation";
-import profile from "../../assets/me.jpg";
+import profile from "../../assets/photo.jpg";
 
 const About = () => {
   return (
