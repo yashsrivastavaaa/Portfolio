@@ -65,7 +65,7 @@ export const projects = [
     title: "TrakIt",
     icon: " ",
     description:
-      "TrakIt is a simple and effective tool to help you stay organized during your job search. Keep a record of the companies you've applied to and track the status of each application in one place.",
+      "TTrakIt is a comprehensive job application tracker designed to help job seekers stay organized and efficient throughout their job search process. It allows users to securely log in and maintain detailed records of companies they’ve applied to, including job positions, locations, compensation, and personalized notes. With TrakIt, users can easily track and update the status of each application—from applied to interviewing, offered, or rejected—while also enabling search and filtering for better management. Built with a clean and intuitive interface, TrakIt simplifies the often overwhelming task of managing multiple job applications, empowering users to stay focused and make informed decisions in their career journey.",
     features: [
       "🔐 Secure login system to protect your data",
       "📋 Add company names, job position, ctc, location, additional notes you've applied for",
