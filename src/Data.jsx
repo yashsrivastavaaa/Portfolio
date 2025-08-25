@@ -22,7 +22,6 @@ export const contactInfo = [
     link: "https://www.linkedin.com/in/yashsrivastavaaaaa/",
     newTab: true,
   },
-
   {
     icon: <SiLeetcode className="text-blue-400 text-xl" />,
     title: "LeetCode",
@@ -51,7 +50,6 @@ export const technicalSkills = [
   "Tailwind CSS",
 ];
 
-
 export const softSkills = [
   { name: "Problem-Solving", icon: "🧩" },
   { name: "Team Collaboration", icon: "👥" },
@@ -69,23 +67,24 @@ export const projects = [
     description:
       "TrakIt is a simple and effective tool to help you stay organized during your job search. Keep a record of the companies you've applied to and track the status of each application in one place.",
     features: [
-      "📋 Add company names and job positions you've applied for",
+      "🔐 Secure login system to protect your data",
+      "📋 Add company names, job position, ctc, location, additional notes you've applied for",
       "🔄 Track and update application statuses: Applied, Interviewing, Offered, Rejected",
-      "📊 Stay organized and focused throughout your job hunt"
+      "⭐ Search applications by company or position",
+      "✏️ Edit or delete job application entries easily",
+      "📊 Stay organized and focused throughout your job hunt",
+      "📂 Filter applications by status for better organization",
+      "📆 Track application dates and progress over time",
     ],
-    techStack: [
-      "React Native",
-      "TypeScript",
-      "NeonDB (PostgreSQL)",
-      "Expo"
-    ],
-    demoLink: "https://drive.google.com/file/d/1gRlXb2Wmg7J_3RzAn88Q9pINORkmw0Ct/view",
-    codeLink: "https://github.com/yashsrivastavaaa/TrakIt"
+    techStack: ["React Native", "TypeScript", "NeonDB (PostgreSQL)", "Expo"],
+    demoLink:
+      "https://drive.google.com/file/d/1gRlXb2Wmg7J_3RzAn88Q9pINORkmw0Ct/view",
+    codeLink: "https://github.com/yashsrivastavaaa/TrakIt",
   },
   {
     id: 2,
     title: "MockMate",
-    icon: " ", 
+    icon: " ",
     description:
       "MockMate is a full-stack AI-powered mock interview platform that helps users practice personalized, voice-based interviews with instant feedback. It simulates real job interview scenarios using AI voice interaction and provides actionable insights to help users improve their responses. Built with a modular and scalable architecture, MockMate combines cutting-edge AI with a sleek user experience to support career growth.",
     features: [
@@ -98,7 +97,7 @@ export const projects = [
       "💾 PostgreSQL database to store user data, interviews, and feedback",
       "🖥️ Clean, responsive UI built with Next.js and Tailwind CSS",
       "📱 Mobile-friendly design optimized for all devices",
-      "⚙️ Modular architecture supporting scalability and reusability"
+      "⚙️ Modular architecture supporting scalability and reusability",
     ],
     techStack: [
       "Next.js",
@@ -108,10 +107,10 @@ export const projects = [
       "11labs API (Voice interaction)",
       "PostgreSQL",
       "Tailwind CSS",
-      "Vercel (Hosting)"
+      "Vercel (Hosting)",
     ],
     demoLink: "https://mock-mate-one-theta.vercel.app/",
-    codeLink: "https://github.com/yashsrivastavaaa/MockMate" 
+    codeLink: "https://github.com/yashsrivastavaaa/MockMate",
   },
   {
     id: 3,
@@ -126,17 +125,16 @@ export const projects = [
       "🎯 Get club-specific posts and personalized updates",
       "🔍 Explore and join clubs that match your interests",
       "🌐 Access public posts and view upcoming events",
-      "⚡ One-click registration for public events"
+      "⚡ One-click registration for public events",
     ],
     techStack: [
       "React Native",
       "TypeScript",
       "Cloudinary (for media storage)",
       "NeonDB (PostgreSQL)",
-      "Expo"
+      "Expo",
     ],
     demoLink: "https://github.com/yashsrivastavaaa/CampusVibes",
-    codeLink: "https://github.com/yashsrivastavaaa/CampusVibes"
-  }
+    codeLink: "https://github.com/yashsrivastavaaa/CampusVibes",
+  },
 ];
-
