@@ -64,58 +64,79 @@ export const softSkills = [
 export const projects = [
   {
     id: 1,
-  title: "MockMate",
-  icon: " ", 
-  description:
-    "MockMate is a full-stack AI-powered mock interview platform that helps users practice personalized, voice-based interviews with instant feedback. It simulates real job interview scenarios using AI voice interaction and provides actionable insights to help users improve their responses. Built with a modular and scalable architecture, MockMate combines cutting-edge AI with a sleek user experience to support career growth.",
-  features: [
-    "🔐 Secure sign-up and sign-in using Firebase Authentication",
-    "🧠 AI-powered interview questions generated dynamically via Google Gemini",
-    "🗣️ Realistic voice interactions powered by 11labs",
-    "📋 Instant AI-driven feedback on interview responses",
-    "📄 Create custom interviews tailored to specific roles or fields",
-    "📊 Interactive dashboard to track interview history and performance",
-    "💾 PostgreSQL database to store user data, interviews, and feedback",
-    "🖥️ Clean, responsive UI built with Next.js and Tailwind CSS",
-    "📱 Mobile-friendly design optimized for all devices",
-    "⚙️ Modular architecture supporting scalability and reusability"
-  ],
-  techStack: [
-    "Next.js",
-    "TypeScript",
-    "Firebase Authentication",
-    "Google Gemini (AI generation)",
-    "11labs API (Voice interaction)",
-    "PostgreSQL",
-    "Tailwind CSS",
-    "Vercel (Hosting)"
-  ],
-  demoLink: "https://mock-mate-one-theta.vercel.app/",
-  codeLink: "https://github.com/yashsrivastavaaa/MockMate" 
+    title: "TrakIt",
+    icon: " ",
+    description:
+      "TrakIt is a simple and effective tool to help you stay organized during your job search. Keep a record of the companies you've applied to and track the status of each application in one place.",
+    features: [
+      "📋 Add company names and job positions you've applied for",
+      "🔄 Track and update application statuses: Applied, Interviewing, Offered, Rejected",
+      "📊 Stay organized and focused throughout your job hunt"
+    ],
+    techStack: [
+      "React Native",
+      "TypeScript",
+      "NeonDB (PostgreSQL)",
+      "Expo"
+    ],
+    demoLink: "https://drive.google.com/file/d/1gRlXb2Wmg7J_3RzAn88Q9pINORkmw0Ct/view",
+    codeLink: "https://github.com/yashsrivastavaaa/TrakIt"
   },
   {
     id: 2,
+    title: "MockMate",
+    icon: " ", 
+    description:
+      "MockMate is a full-stack AI-powered mock interview platform that helps users practice personalized, voice-based interviews with instant feedback. It simulates real job interview scenarios using AI voice interaction and provides actionable insights to help users improve their responses. Built with a modular and scalable architecture, MockMate combines cutting-edge AI with a sleek user experience to support career growth.",
+    features: [
+      "🔐 Secure sign-up and sign-in using Firebase Authentication",
+      "🧠 AI-powered interview questions generated dynamically via Google Gemini",
+      "🗣️ Realistic voice interactions powered by 11labs",
+      "📋 Instant AI-driven feedback on interview responses",
+      "📄 Create custom interviews tailored to specific roles or fields",
+      "📊 Interactive dashboard to track interview history and performance",
+      "💾 PostgreSQL database to store user data, interviews, and feedback",
+      "🖥️ Clean, responsive UI built with Next.js and Tailwind CSS",
+      "📱 Mobile-friendly design optimized for all devices",
+      "⚙️ Modular architecture supporting scalability and reusability"
+    ],
+    techStack: [
+      "Next.js",
+      "TypeScript",
+      "Firebase Authentication",
+      "Google Gemini (AI generation)",
+      "11labs API (Voice interaction)",
+      "PostgreSQL",
+      "Tailwind CSS",
+      "Vercel (Hosting)"
+    ],
+    demoLink: "https://mock-mate-one-theta.vercel.app/",
+    codeLink: "https://github.com/yashsrivastavaaa/MockMate" 
+  },
+  {
+    id: 3,
     title: "CampusVibes",
     icon: " ",
     description:
       "CampusVibes is a React Native-based mobile application designed to keep students connected, informed, and engaged with their college community. It is a cross-platform mobile application built with React Native, designed to centralize campus engagement by helping students, visitors, and administrators stay connected through real-time event updates, club activities, announcements, and media sharing—powered by Drizzle ORM, Neon PostgreSQL, and Cloudinary.",
     features: [
-      "Manage posts, events, and clubs through an intuitive interface.",
-      "View club members and registered users",
-      "Register/unregister for events seamlessly",
-      "Get club-specific posts and personalized updates",
-      "Explore and join clubs that match their interests.",
-      "Access public posts and view upcoming events",
-      "Can perform one-click registration for public events.",
+      "📣 Manage posts, events, and clubs through an intuitive interface",
+      "👥 View club members and registered users",
+      "📝 Register/unregister for events seamlessly",
+      "🎯 Get club-specific posts and personalized updates",
+      "🔍 Explore and join clubs that match your interests",
+      "🌐 Access public posts and view upcoming events",
+      "⚡ One-click registration for public events"
     ],
     techStack: [
       "React Native",
       "TypeScript",
       "Cloudinary (for media storage)",
-      "Neon Database (PostgreSQL)",
-
+      "NeonDB (PostgreSQL)",
+      "Expo"
     ],
     demoLink: "https://github.com/yashsrivastavaaa/CampusVibes",
-    codeLink: "https://github.com/yashsrivastavaaa/CampusVibes",
-  },
+    codeLink: "https://github.com/yashsrivastavaaa/CampusVibes"
+  }
 ];
+
