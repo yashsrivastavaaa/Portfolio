@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { softSkills, technicalSkills } from "../../Data";
+import { softSkills, technicalSkills, tools } from "../../Data";
 
 const Skills = () => {
   return (
@@ -64,7 +64,8 @@ const Skills = () => {
                   whileInView={{ opacity: 1 }}
                   transition={{ duration: 0.3, delay: index * 0.05 }}
                   viewport={{ once: true }}
-                  className="flex items-center p-3 bg-gray-700/30 rounded-lg hover:bg-gray-700/50 transition-colors"
+                  whileHover={{ scale: 1.05, backgroundColor: "rgba(55, 65, 81, 0.6)" }}
+                  className="flex items-center p-3 bg-gray-700/30 rounded-lg hover:bg-gray-700/50 transition-colors cursor-pointer"
                 >
                   <div className="w-2 h-2 bg-blue-400 rounded-full mr-3"></div>
                   <span className="text-gray-300">{skill}</span>
@@ -104,8 +105,8 @@ const Skills = () => {
               {softSkills.map((skill, index) => (
                 <motion.div
                   key={index}
-                  whileHover={{ y: -3 }}
-                  className="bg-gray-700/30 hover:bg-gray-700/50 transition-all p-4 rounded-lg border border-gray-600 flex flex-col items-center"
+                  whileHover={{ y: -3, scale: 1.05, backgroundColor: "rgba(55, 65, 81, 0.6)" }}
+                  className="bg-gray-700/30 hover:bg-gray-700/50 transition-all p-3 rounded-lg border border-gray-600 flex flex-col items-center cursor-pointer"
                 >
                   <span className="text-3xl mb-2">{skill.icon}</span>
                   <span className="text-center font-medium text-gray-300">
@@ -117,6 +118,41 @@ const Skills = () => {
           </motion.div>
         </div>
 
+        {/* Tools Section */}
+        <div className="mt-12">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5 }}
+            viewport={{ once: true }}
+            className="text-center mb-8"
+          >
+            <h2 className="text-4xl sm:text-5xl font-bold mb-4">
+              <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-500">
+                Tools
+              </span>
+            </h2>
+            <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+              Tools I use daily for development and analytics
+            </p>
+          </motion.div>
+
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+            {tools.map((tool, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, y: 10 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.4, delay: index * 0.05 }}
+                viewport={{ once: true }}
+                whileHover={{ scale: 1.05, backgroundColor: "rgba(31, 41, 55, 0.7)" }}
+                className="bg-gray-800/50 p-4 rounded-xl border border-gray-700 shadow-lg text-center cursor-pointer"
+              >
+                <span className="text-lg font-semibold text-white">{tool}</span>
+              </motion.div>
+            ))}
+          </div>
+        </div>
 
       </div>
     </section>

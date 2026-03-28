@@ -7,9 +7,9 @@ const Experience = () => {
   return (
     <section
       id="experience"
-      className="py-10 px-4 sm:px-6 lg:px-8 bg-gray-900 text-white"
+      className="py-6 px-4 sm:px-6 lg:px-8 bg-gray-900 text-white"
     >
-      <div className="max-w-6xl mx-auto">
+      <div className="max-w-6xl mx-auto w-full">
         {/* Section Header */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -29,7 +29,7 @@ const Experience = () => {
         </motion.div>
 
         {/* Experience Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-1 gap-8">
           {experience.map((exp) => (
             <motion.div
               key={exp.id}
@@ -48,6 +48,9 @@ const Experience = () => {
                     <h3 className="text-2xl font-bold">{exp.role}</h3>
                     <p className="text-gray-400 text-sm">
                       {exp.company} • {exp.location}
+                    </p>
+                    <p className="text-blue-300 text-sm mt-1">
+                      {exp.duration ? exp.duration : "Feb 2026 - Present"}
                     </p>
                   </div>
                 </div>
@@ -76,24 +79,6 @@ const Experience = () => {
           ))}
         </div>
 
-        {/* CTA */}
-        <motion.div
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          transition={{ duration: 0.5, delay: 0.3 }}
-          viewport={{ once: true }}
-          className="mt-16 text-center"
-        >
-          <p className="text-gray-300 mb-6">
-            Want to know more about my work or collaborate?
-          </p>
-          <a
-            href="#contact"
-            className="inline-flex items-center px-6 py-3 rounded-md text-white bg-gradient-to-r from-purple-600 to-blue-500 hover:from-purple-700 hover:to-blue-600 transition-all duration-300"
-          >
-            Let's Connect
-          </a>
-        </motion.div>
       </div>
     </section>
   );

@@ -2,6 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import { TypeAnimation } from "react-type-animation";
 import profile from "../../assets/photo.jpg";
+import Experience from "./Experience";
 
 const About = () => {
   return (
@@ -34,6 +35,7 @@ const About = () => {
             </h3>
             <p className="text-lg text-gray-300 leading-relaxed text-justify">
               Currently pursuing B.Tech in Computer Science and Engineering (Artificial Intelligence). I specialize in modern technologies like React.js, Next.js, TypeScript, JavaScript, React Native and Java, with strong foundations in programming and problem-solving.
+              I also bring practical experience from my role as a Data Intern at Crowe LLP (Feb 2026 - Present), where I contribute to data-driven backend solutions using Python, SQL Server, Flask, YAML, and Jinja.
             </p>
             <p className="text-lg text-gray-300 leading-relaxed text-justify">
               My academic journey has equipped me with both technical knowledge
@@ -70,16 +72,23 @@ const About = () => {
           </motion.div>
         </div>
 
+        {/* Experience Section */}
+        <div className="mt-4">
+          <Experience />
+        </div>
+
         {/* Education Section */}
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.6 }}
-          className="mt-20"
+          className="mt-10"
         >
-          <h3 className="text-3xl font-bold mb-8 text-center text-blue-300">
-            Education
-          </h3>
+          <h2 className="text-4xl sm:text-5xl font-bold mb-4 flex-col text-center mt-[-20]">
+            <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-500">
+              Education
+            </span>
+          </h2>
 
           <div className="space-y-8">
             <motion.div

@@ -7,6 +7,7 @@ export const experience = [
     role: "Data Intern",
     company: "Crowe LLP",
     location: "Noida",
+    duration: "Feb 2026 - Present",
     description:
       "Working as a Data Intern at Crowe LLP, Noida, contributing to the development of data-driven solutions and backend systems. Leveraging Python and SQL Server for efficient data processing, transformation, and analysis. Utilizing YAML and Jinja for dynamic configurations and templating, while building lightweight and scalable backend services using Flask. Focused on writing clean, maintainable code and solving real-world data engineering challenges.",
     techStack: ["Python", "SQL Server", "YAML", "Jinja", "Flask"],
@@ -73,6 +74,19 @@ export const softSkills = [
   { name: "Time Management", icon: "⏱️" },
   { name: "Communication", icon: "💬" },
   { name: "Critical Thinking", icon: "🧠" },
+  { name: "Leadership", icon: "👑" },
+  { name: "Creativity", icon: "🎨" },
+  { name: "Attention to Detail", icon: "🔍" },
+  { name: "Resilience", icon: "💪" },
+  { name: "Empathy", icon: "❤️" },
+  { name: "Innovation", icon: "💡" },
+];
+
+export const tools = [
+  "VS Code",
+  "GitHub",
+  "Git",
+  "Power BI",
 ];
 
 export const projects = [
