@@ -1,6 +1,18 @@
 import { FiGithub, FiLinkedin, FiMail } from "react-icons/fi";
 import { SiLeetcode } from "react-icons/si";
 
+export const experience = [
+  {
+    id: 1,
+    role: "Data Intern",
+    company: "Crowe LLP",
+    location: "Noida",
+    description:
+      "Working as a Data Intern at Crowe LLP, Noida, contributing to the development of data-driven solutions and backend systems. Leveraging Python and SQL Server for efficient data processing, transformation, and analysis. Utilizing YAML and Jinja for dynamic configurations and templating, while building lightweight and scalable backend services using Flask. Focused on writing clean, maintainable code and solving real-world data engineering challenges.",
+    techStack: ["Python", "SQL Server", "YAML", "Jinja", "Flask"],
+  },
+];
+
 export const contactInfo = [
   {
     icon: <FiMail className="text-blue-400 text-xl" />,
@@ -34,6 +46,10 @@ export const contactInfo = [
 export const technicalSkills = [
   "Java Programming",
   "Python",
+  "YAML",
+  "Jinja",
+  "Flask",
+  "SQL Server",
   "Object-Oriented Programming (OOP)",
   "Data Structures & Algorithms (DSA)",
   "Operating Systems (OS)",
