@@ -98,7 +98,7 @@ const About = () => {
               <div className="flex flex-col md:flex-row md:items-center md:justify-between">
                 <div>
                   <h4 className="text-xl font-semibold">
-                    Bachelor of Technology in Computer Science
+                    Bachelor of Technology in Computer Science and Engineering (Artificial Intelligence)
                   </h4>
                   <p className="text-blue-300">
                     G.L. Bajaj Institute of Technology and Management, Greater
