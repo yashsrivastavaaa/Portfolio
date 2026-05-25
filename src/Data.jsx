@@ -9,8 +9,9 @@ export const experience = [
     location: "Noida",
     duration: "Feb 2026 - Present",
     description:
-      "Working as a Data Intern at Crowe LLP, Noida, contributing to the development of data-driven solutions and backend systems. Leveraging Python and SQL Server for efficient data processing, transformation, and analysis. Utilizing YAML and Jinja for dynamic configurations and templating, while building lightweight and scalable backend services using Flask. Focused on writing clean, maintainable code and solving real-world data engineering challenges.",
-    techStack: ["Python", "SQL Server", "YAML", "Jinja", "Flask"],
+  "Working as a Data Intern at Crowe LLP, Noida, contributing to metadata-driven data quality solutions and backend systems. Worked with Python and SQL Server for data processing, transformation, and validation workflows. Utilized YAML configurations and Jinja templating to generate dynamic SQL queries and automate test case generation from database metadata. Focused on optimizing query performance, improving data quality processes, and building scalable, maintainable backend solutions.",
+
+techStack: ["Python", "SQL Server", "YAML", "Jinja"],
   },
 ];
 
