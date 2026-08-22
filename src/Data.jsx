@@ -1,171 +1,116 @@
 import { FiGithub, FiLinkedin, FiMail } from "react-icons/fi";
 import { SiLeetcode } from "react-icons/si";
 
+export const profile = {
+  name: "Yash Srivastava",
+  headline: "Building things across AI, software, data, web & mobile.",
+  intro:
+    "I build practical products across AI, software, data, web and mobile — from RAG and MCP workflows to full-stack applications and scalable data systems.",
+  location: "Noida, Uttar Pradesh, India",
+  education: "B.Tech — Computer Science & Engineering (Artificial Intelligence)",
+  cgpa: "8.13 / 10",
+  leetcode: "650+ problems solved",
+  phone: "+91 6307809466",
+};
+
 export const experience = [
   {
     id: 1,
     role: "Data Intern",
-    company: "Crowe LLP",
-    location: "Noida",
-    duration: "Feb 2026 - Present",
+    company: "Crowe Capability Center — Crowe LLP",
+    location: "Noida, Uttar Pradesh",
+    duration: "Feb 2026 – Jul 2026",
     description:
-  "Working as a Data Intern at Crowe LLP, Noida, contributing to metadata-driven data quality solutions and backend systems. Worked with Python and SQL Server for data processing, transformation, and validation workflows. Utilized YAML configurations and Jinja templating to generate dynamic SQL queries and automate test case generation from database metadata. Focused on optimizing query performance, improving data quality processes, and building scalable, maintainable backend solutions.",
+      "Worked on metadata-driven data quality systems, LLM-powered SQL rule generation, RAG-based knowledge retrieval and real-time data quality monitoring.",
+    highlights: [
+      "Engineered metadata-driven data quality workflows using Python and SQL Server across 15+ enterprise databases, reducing manual validation effort by 80%.",
+      "Designed an LLM-powered SQL rule generation and validation system using MCP (Model Context Protocol), automating 40,000+ SQL data quality rules and reducing rule creation time by 95%.",
+      "Built an LLM-powered RAG chatbot indexing 500+ enterprise knowledge documents, reducing information retrieval time by 70%.",
+      "Built 8+ responsive dashboards using React, Next.js, TypeScript and REST APIs for real-time data quality monitoring, enabling 50% faster issue identification.",
+      "Optimized SQL-based validation with multithreaded Python workflows across 40,000+ test cases using YAML and Jinja, reducing execution time from 2500s to 900s (64%).",
+    ],
+    techStack: ["Python", "SQL Server", "MCP", "RAG", "React", "Next.js", "TypeScript", "YAML", "Jinja", "REST APIs"],
+  },
+];
 
-techStack: ["Python", "SQL Server", "YAML", "Jinja"],
+export const education = [
+  {
+    title: "Bachelor of Technology in Computer Science and Engineering (Artificial Intelligence)",
+    school: "G.L. Bajaj Institute of Technology and Management",
+    location: "Greater Noida, Uttar Pradesh",
+    period: "Nov 2022 – Jun 2026",
+    score: "CGPA — 8.13 / 10",
+  },
+  {
+    title: "Intermediate (Class 12)",
+    school: "Vanita Public School",
+    location: "Varanasi, Uttar Pradesh",
+    period: "2021 – 2022",
+    score: "Percentage — 89.8%",
   },
 ];
 
 export const contactInfo = [
-  {
-    icon: <FiMail className="text-blue-400 text-xl" />,
-    title: "Email",
-    content: "yashsrivns@gmail.com",
-    link: "mailto:yashsrivns@gmail.com",
-  },
-  {
-    icon: <FiGithub className="text-blue-400 text-xl" />,
-    title: "GitHub",
-    content: "github.com/yashsrivastavaaa",
-    link: "https://github.com/yashsrivastavaaa",
-    newTab: true,
-  },
-  {
-    icon: <FiLinkedin className="text-blue-400 text-xl" />,
-    title: "LinkedIn",
-    content: "linkedin.com/in/yashsrivastavaaaaa",
-    link: "https://www.linkedin.com/in/yashsrivastavaaaaa/",
-    newTab: true,
-  },
-  {
-    icon: <SiLeetcode className="text-blue-400 text-xl" />,
-    title: "LeetCode",
-    content: "leetcode.com/yashsrivns",
-    link: "https://leetcode.com/u/yashsrivns/",
-    newTab: true,
-  },
+  { icon: <FiMail aria-hidden="true" focusable="false" />, title: "Email", content: "yashsrivns@gmail.com", link: "mailto:yashsrivns@gmail.com" },
+  { icon: <FiGithub aria-hidden="true" focusable="false" />, title: "GitHub", content: "github.com/yashsrivastavaaa", link: "https://github.com/yashsrivastavaaa", newTab: true },
+  { icon: <FiLinkedin aria-hidden="true" focusable="false" />, title: "LinkedIn", content: "linkedin.com/in/yashsrivastavaaaaa", link: "https://www.linkedin.com/in/yashsrivastavaaaaa/", newTab: true },
+  { icon: <SiLeetcode aria-hidden="true" focusable="false" />, title: "LeetCode", content: "leetcode.com/u/yashsrivns", link: "https://leetcode.com/u/yashsrivns/", newTab: true },
 ];
 
-export const technicalSkills = [
-  "Java Programming",
-  "Python",
-  "YAML",
-  "Jinja",
-  "Flask",
-  "SQL Server",
-  "Object-Oriented Programming (OOP)",
-  "Data Structures & Algorithms (DSA)",
-  "Operating Systems (OS)",
-  "Computer Networks (CN)",
-  "MySQL",
-  "PostgreSQL",
-  "Software Engineering",
-  "HTML5 & CSS3",
-  "JavaScript (ES6+)",
-  "TypeScript",
-  "React.js",
-  "Next.js",
-  "React Native",
-  "Tailwind CSS",
+// Keep this export name exactly as used by Skills.jsx.
+export const skillGroups = [
+  { title: "Languages", items: ["Python", "Java", "SQL", "JavaScript", "TypeScript", "C", "C++"] },
+  { title: "Data Engineering", items: ["ETL / ELT", "Data Quality", "Data Validation", "SQL Server", "PostgreSQL", "MySQL", "YAML", "Jinja", "Multithreading"] },
+  { title: "AI & LLM", items: ["LLMs", "RAG", "MCP", "Prompt Engineering", "Google Gemini", "LLM Applications"] },
+  { title: "Frontend & Backend", items: ["Next.js", "React", "React Native", "Expo", "Node.js", "REST APIs"] },
+  { title: "Engineering & Tools", items: ["DSA", "OOP", "DBMS", "System Design", "Git", "GitHub", "Drizzle ORM", "Firebase", "Power BI"] },
 ];
 
+// Backward-compatible aliases in case any older component imports these names.
+export const technicalSkills = skillGroups.flatMap((group) => group.items);
+export const tools = ["Git", "GitHub", "VS Code", "Drizzle ORM", "Firebase", "Power BI"];
 export const softSkills = [
-  { name: "Problem-Solving", icon: "🧩" },
-  { name: "Team Collaboration", icon: "👥" },
-  { name: "Adaptability", icon: "🔄" },
-  { name: "Time Management", icon: "⏱️" },
-  { name: "Communication", icon: "💬" },
-  { name: "Critical Thinking", icon: "🧠" },
-  { name: "Leadership", icon: "👑" },
-  { name: "Creativity", icon: "🎨" },
-  { name: "Attention to Detail", icon: "🔍" },
-  { name: "Resilience", icon: "💪" },
-  { name: "Empathy", icon: "❤️" },
-  { name: "Innovation", icon: "💡" },
-];
-
-export const tools = [
-  "VS Code",
-  "GitHub",
-  "Git",
-  "Power BI",
+  { name: "Problem Solving", icon: "" },
+  { name: "Team Collaboration", icon: "" },
+  { name: "Communication", icon: "" },
+  { name: "Adaptability", icon: "" },
 ];
 
 export const projects = [
   {
     id: 1,
-    title: "TrakIt",
-    icon: " ",
-    description:
-      "TTrakIt is a comprehensive job application tracker designed to help job seekers stay organized and efficient throughout their job search process. It allows users to securely log in and maintain detailed records of companies they’ve applied to, including job positions, locations, compensation, and personalized notes. With TrakIt, users can easily track and update the status of each application—from applied to interviewing, offered, or rejected—while also enabling search and filtering for better management. Built with a clean and intuitive interface, TrakIt simplifies the often overwhelming task of managing multiple job applications, empowering users to stay focused and make informed decisions in their career journey.",
+    title: "MockMate",
+    type: "AI • Full Stack",
+    description: "A full-stack AI interview platform built with Next.js, TypeScript, PostgreSQL, Google Gemini, Firebase Authentication and ElevenLabs.",
     features: [
-      "🔐 Secure login system to protect your data",
-      "📋 Add company names, job position, ctc, location, additional notes you've applied for",
-      "🔄 Track and update application statuses: Applied, Interviewing, Offered, Rejected",
-      "⭐ Search applications by company or position",
-      "✏️ Edit or delete job application entries easily",
-      "📊 Stay organized and focused throughout your job hunt",
-      "📂 Filter applications by status for better organization",
-      "📆 Track application dates and progress over time",
+      "Reduced manual interview efforts by 90%",
+      "Gemini-powered interview generation and evaluation",
+      "Real-time voice interactions for 40+ simultaneous candidates",
+      "10,000+ interview records with optimized PostgreSQL indexing",
+      "Secure REST APIs and Firebase Authentication",
     ],
-    techStack: ["React Native", "TypeScript", "NeonDB (PostgreSQL)", "Expo"],
-    demoLink:
-      "https://drive.google.com/file/d/1gRlXb2Wmg7J_3RzAn88Q9pINORkmw0Ct/view",
-    codeLink: "https://github.com/yashsrivastavaaa/TrakIt",
+    techStack: ["Next.js", "TypeScript", "PostgreSQL", "Google Gemini", "Firebase", "ElevenLabs"],
+    demoLink: "https://mock-mate-one-theta.vercel.app/",
+    codeLink: "https://github.com/yashsrivastavaaa/MockMate",
+    featured: true,
   },
   {
     id: 2,
-    title: "MockMate",
-    icon: " ",
-    description:
-      "MockMate is a full-stack AI-powered mock interview platform that helps users practice personalized, voice-based interviews with instant feedback. It simulates real job interview scenarios using AI voice interaction and provides actionable insights to help users improve their responses. Built with a modular and scalable architecture, MockMate combines cutting-edge AI with a sleek user experience to support career growth.",
+    title: "TrakIt",
+    type: "Mobile • Productivity",
+    description: "A cross-platform job application tracking application built with React Native, TypeScript, Drizzle ORM and Neon PostgreSQL.",
     features: [
-      "🔐 Secure sign-up and sign-in using Firebase Authentication",
-      "🧠 AI-powered interview questions generated dynamically via Google Gemini",
-      "🗣️ Realistic voice interactions powered by 11labs",
-      "📋 Instant AI-driven feedback on interview responses",
-      "📄 Create custom interviews tailored to specific roles or fields",
-      "📊 Interactive dashboard to track interview history and performance",
-      "💾 PostgreSQL database to store user data, interviews, and feedback",
-      "🖥️ Clean, responsive UI built with Next.js and Tailwind CSS",
-      "📱 Mobile-friendly design optimized for all devices",
-      "⚙️ Modular architecture supporting scalability and reusability",
+      "4+ core application management features",
+      "5+ CRUD operations for application management",
+      "Search and application status tracking",
+      "Normalized PostgreSQL schema for 1,000+ records",
+      "Analytics dashboard with 10+ job-search metrics",
     ],
-    techStack: [
-      "Next.js",
-      "TypeScript",
-      "Firebase Authentication",
-      "Google Gemini (AI generation)",
-      "11labs API (Voice interaction)",
-      "PostgreSQL",
-      "Tailwind CSS",
-      "Vercel (Hosting)",
-    ],
-    demoLink: "https://mock-mate-one-theta.vercel.app/",
-    codeLink: "https://github.com/yashsrivastavaaa/MockMate",
-  },
-  {
-    id: 3,
-    title: "CampusVibes",
-    icon: " ",
-    description:
-      "CampusVibes is a React Native-based mobile application designed to keep students connected, informed, and engaged with their college community. It is a cross-platform mobile application built with React Native, designed to centralize campus engagement by helping students, visitors, and administrators stay connected through real-time event updates, club activities, announcements, and media sharing—powered by Drizzle ORM, Neon PostgreSQL, and Cloudinary.",
-    features: [
-      "📣 Manage posts, events, and clubs through an intuitive interface",
-      "👥 View club members and registered users",
-      "📝 Register/unregister for events seamlessly",
-      "🎯 Get club-specific posts and personalized updates",
-      "🔍 Explore and join clubs that match your interests",
-      "🌐 Access public posts and view upcoming events",
-      "⚡ One-click registration for public events",
-    ],
-    techStack: [
-      "React Native",
-      "TypeScript",
-      "Cloudinary (for media storage)",
-      "NeonDB (PostgreSQL)",
-      "Expo",
-    ],
-    demoLink: "https://github.com/yashsrivastavaaa/CampusVibes",
-    codeLink: "https://github.com/yashsrivastavaaa/CampusVibes",
+    techStack: ["React Native", "TypeScript", "Drizzle ORM", "Neon PostgreSQL"],
+    codeLink: "https://github.com/yashsrivastavaaa/TrakIt",
+    demoLink: "https://drive.google.com/file/d/1gRlXb2Wmg7J_3RzAn88Q9pINORkmw0Ct/view",
+    featured: true,
   },
 ];
+
+export const resumeUrl = "https://drive.google.com/file/d/1usXZG1Qt7QXhIq07orp6asyqFjvdWWsb/view?usp=sharing";

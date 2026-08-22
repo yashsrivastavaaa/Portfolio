@@ -1,146 +1,58 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { NavLink, Link, useLocation } from "react-router-dom";
+import { FiMenu, FiX, FiArrowUpRight } from "react-icons/fi";
 
-const NavBar = () => {
-  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+const items = [
+  ["About", "/about"],
+  ["Experience", "/experience"],
+  ["Projects", "/projects"],
+  ["Skills", "/skills"],
+  ["Contact", "/contact"],
+];
+
+export default function Navbar() {
+  const [open, setOpen] = useState(false);
   const location = useLocation();
 
-  const navItems = [
-    { name: "Home", path: "/" },
-    { name: "About", path: "/about" },
-    { name: "Experience", path: "/experience" },
-    { name: "Skills", path: "/skills" },
-    { name: "Projects", path: "/projects" },
-    { name: "Contact", path: "/contact" },
-  ];
-
-  // Scroll to top on route change
   useEffect(() => {
-    window.scrollTo(0, 0);
-  }, [location]);
-
-  // Scroll to top handler for navigation clicks
-  const handleNavClick = () => {
-    window.scrollTo(0, 0);
-    setIsSidebarOpen(false);
-  };
+    window.scrollTo({ top: 0, behavior: "instant" });
+    setOpen(false);
+  }, [location.pathname]);
 
   return (
-    <>
-      {/* Main Navigation Bar */}
-      <nav className="bg-gray-800 sticky top-0 z-40 h-16 flex items-center">
-        <div className="container mx-auto px-4 flex justify-between items-center">
-          {/* Menu Button - Left */}
-          <button
-            onClick={() => setIsSidebarOpen(true)}
-            className="md:hidden text-gray-300 hover:text-white"
-            aria-label="Open menu"
-          >
-            <svg
-              className="w-6 h-6"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="M4 6h16M4 12h16M4 18h16"
-              />
-            </svg>
-          </button>
+    <header className="sticky top-0 z-50 border-b border-white/10 bg-[#070b14]/80 backdrop-blur-xl">
+      <nav className="mx-auto flex h-[72px] max-w-7xl items-center justify-between px-5 sm:px-8">
+        <Link to="/" className="group flex items-center gap-3">
+          <span className="grid h-9 w-9 place-items-center rounded-xl border border-white/15 bg-white/10 font-bold text-sm shadow-lg shadow-cyan-500/10">YS</span>
+          <span className="hidden font-semibold tracking-tight sm:block">Yash Srivastava</span>
+        </Link>
 
-          {/* Title - Center */}
-          <Link
-            to="/"
-            className="font-mono text-white text-3xl font-bold hover:text-gray-300"
-            onClick={handleNavClick}
-          >
-            Portfolio
-          </Link>
-
-          {/* Desktop Menu - Right */}
-          <div className="hidden md:flex space-x-6">
-            {navItems.map((item) => (
-              <NavLink
-                key={item.name}
-                to={item.path}
-                onClick={handleNavClick}
-                className={({ isActive }) =>
-                  `px-1 py-2 text-sm font-medium transition-colors border-b-2 ${isActive
-                    ? "text-white border-white"
-                    : "text-gray-300 hover:text-white border-transparent hover:border-gray-500"
-                  }`
-                }
-              >
-                {item.name}
-              </NavLink>
-            ))}
-          </div>
+        <div className="hidden items-center gap-1 md:flex">
+          {items.map(([label, path]) => (
+            <NavLink key={path} to={path} className={({ isActive }) => `rounded-full px-4 py-2 text-sm transition ${isActive ? "bg-white text-slate-950" : "text-slate-400 hover:bg-white/10 hover:text-white"}`}>
+              {label}
+            </NavLink>
+          ))}
         </div>
+
+        <Link to="/contact" className="hidden items-center gap-2 rounded-full border border-cyan-300/20 bg-cyan-300/10 px-4 py-2 text-sm font-medium text-cyan-100 transition hover:bg-cyan-300/20 sm:flex">
+          Let's talk <FiArrowUpRight aria-hidden="true" focusable="false" />
+        </Link>
+
+        <button className="rounded-xl border border-white/10 p-2 md:hidden" onClick={() => setOpen(!open)} aria-label="Toggle menu">
+          {open ? <FiX aria-hidden="true" focusable="false" /> : <FiMenu aria-hidden="true" focusable="false" />}
+        </button>
       </nav>
 
-      {/* Mobile Sidebar */}
-      <div
-        className={`fixed inset-0 z-50 transition-opacity duration-300 ${isSidebarOpen ? "opacity-100 visible" : "opacity-0 invisible"
-          }`}
-      >
-        {/* Semi-transparent overlay */}
-        <div
-          className="fixed inset-0 bg-black bg-opacity-50 transition-opacity"
-          onClick={() => setIsSidebarOpen(false)}
-        />
-
-        {/* Sidebar Content */}
-        <div
-          className={`fixed left-0 top-0 h-full w-64 bg-gray-800 shadow-lg transform transition-transform duration-300 ${isSidebarOpen ? "translate-x-0" : "-translate-x-full"
-            }`}
-        >
-          <div className="p-4 border-b border-gray-700 flex justify-between items-center">
-            <h2 className="text-white text-xl font-bold">Menu</h2>
-            <button
-              onClick={() => setIsSidebarOpen(false)}
-              className="text-gray-300 hover:text-white"
-              aria-label="Close menu"
-            >
-              <svg
-                className="w-6 h-6"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M6 18L18 6M6 6l12 12"
-                />
-              </svg>
-            </button>
-          </div>
-
-          <div className="p-4 space-y-3">
-            {navItems.map((item) => (
-              <NavLink
-                key={item.name}
-                to={item.path}
-                onClick={handleNavClick}
-                className={({ isActive }) =>
-                  `block p-3 transition-colors border-l-4 ${isActive
-                    ? "text-white border-white bg-gray-700"
-                    : "text-gray-300 hover:text-white border-transparent hover:border-gray-500"
-                  }`
-                }
-              >
-                {item.name}
-              </NavLink>
+      {open && (
+        <div className="border-t border-white/10 bg-[#0a0f1b] px-5 py-4 md:hidden">
+          <div className="flex flex-col gap-1">
+            {items.map(([label, path]) => (
+              <NavLink key={path} to={path} className="rounded-xl px-4 py-3 text-slate-300 hover:bg-white/5 hover:text-white">{label}</NavLink>
             ))}
           </div>
         </div>
-      </div>
-    </>
+      )}
+    </header>
   );
-};
-
-export default NavBar;
+}
