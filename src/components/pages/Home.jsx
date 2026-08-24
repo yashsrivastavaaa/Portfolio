@@ -107,7 +107,7 @@ function EducationSection() {
 function AboutPreview() {
   return (
     <section className="section-shell">
-      <div className="section-label">02 / About</div>
+      <div className="section-label">01 / About</div>
       <div className="grid gap-10 lg:grid-cols-[.7fr_1.3fr]">
         <h2 className="section-title">Curious by default.<br /><span className="gradient-text">Practical by design.</span></h2>
         <div className="space-y-5 text-lg leading-8 text-slate-400">
